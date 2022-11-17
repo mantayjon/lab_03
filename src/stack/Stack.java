@@ -1,10 +1,11 @@
 package stack;
 
 public interface Stack<E> {
-
 	public boolean isEmpty();
 
-	public E top() throws Underflow;
+	public default E top() throws Underflow {
+		return null;
+	}
 
 	public void push(E element);
 
