@@ -40,7 +40,7 @@ public class Infix2PostfixTest {
 	}
 
 	@Test
-	public void testInfixToPostfix() {
+	public void testInfixToPostfix() throws Underflow {
 		assertEquals(comment + " (infix was: " + infix + ")", postfix,
 				converter.infixToPostfix(infix));
 	}
